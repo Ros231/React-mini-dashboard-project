@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@theme {
+  --color-main-bg: #284b63;
+  --color-text: #ffffff;
+}
+
+@layer base {
+  body {
+    @apply bg-main-bg text-text antialiased;
+    font-family: 'Inter', sans-serif;
+  }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
