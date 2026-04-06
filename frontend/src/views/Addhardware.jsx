@@ -20,7 +20,7 @@ function addHardware(){
                 quantity
             });
             alert("Hardware added successfully!");
-            navigate("/");
+            navigate("/inventory");
         }
         catch (error){
             console.error("Error adding hardware:", error);

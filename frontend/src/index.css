@@ -1,6 +1,9 @@
 @import "tailwindcss";
 
 @theme {
+
+  --font-kanit : "Kanit", sans-serif;
+
   --color-main-bg: #284b63;
   --color-text: #ffffff;
 }
@@ -8,7 +11,10 @@
 @layer base {
   body {
     @apply bg-main-bg text-text antialiased;
-    font-family: 'Inter', sans-serif;
+
+    font-family: var(--font-kanit);
+
+    font-weight: 300;
   }
 }
 

@@ -225,10 +225,10 @@ const filteredHardware = hardwareData.filter(item =>
                   ) : (
                     <div className="flex gap-2 mr-2 pb-2">
                     <button onClick = {() => updateStock(item._id, item.quantity, 1) } 
-                      className="bg-[#353535] p-2 rounded shadow"><Plus size={24} /></button>
+                      className="bg-[#353535] p-2 rounded shadow hover:bg-[#1f1e1e]"><Plus size={24} /></button>
                       
                       <button onClick = {() => updateStock(item._id, item.quantity, -1) } 
-                      className="bg-[#353535] p-2 rounded shadow"><Minus size={24} /></button>
+                      className="bg-[#353535] p-2 rounded shadow hover:bg-[#1f1e1e]"><Minus size={24} /></button>
 
                       <button onClick = {() => deleteHardware(item._id) } 
                       className="bg-[#353535] p-2 rounded shadow hover:bg-red-900"><Trash size={24} /></button>
